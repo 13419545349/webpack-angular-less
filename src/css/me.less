@@ -1,0 +1,30 @@
+@import "tongse.less";
+@import "index.less";
+.me{
+	img{
+		.mt(60);
+		margin-right:auto;
+		margin-left:auto;
+	}
+	.name{
+		.mt(25);
+	}
+	.btns{
+		.mt(40);
+		button{
+			.w(150);
+			.h(95);
+			.fs(16);
+			.ml(12);
+			.mr(12);
+			background-color:@headBgColr;
+			color:@defaultColor;
+			&.loginout{
+				.w(340);
+				.h(40);
+				.mt(20);
+				background-color:@dangerColor;
+			}
+		}
+	}
+}

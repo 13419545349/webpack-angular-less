@@ -1,0 +1,15 @@
+<ul class="postion-list clear">
+	<!--<li class="item">
+		<img src="src/image/company-3.png" alt="" class="logo fl">
+		<h3 class="title">销售</h3>
+		<p class="text">千度[上海]互联网<br>2016-9-11 11:45
+		</p>
+	</li>-->
+	<li ui-sref="position({id:item.id})" class="item" ng-repeat="item in shuju | filterByObj:filterObj">
+       <img ng-src="{{item.imageUrl}}" alt="" class="logo fl">
+       <h3 class="title">{{item.job}}</h3>
+       <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+item.industryName"></p>
+       <p class="text">{{item.date}}</p>
+       <span class="icon {{item.select?'star-active':'star'}}" ng-if="name"></span>
+	</li>
+</ul>

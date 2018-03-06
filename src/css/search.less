@@ -1,0 +1,42 @@
+@import "index.less";
+@import "tongse.less";
+.search-bar{
+	background-color:@headBgColr;
+	position:fixed;
+	left:0;
+	right:0;
+	.h(40);
+	.lh(40);
+	.t(0);
+	img{
+		transform:scale(0.6);
+	}
+	input{
+		border-radius:80px;
+		background-color:@bodyBgColor;
+		border-style:none;
+		outline-width:0;
+		box-sizing:border-box;
+		.pl(20);
+		.h(25);
+		.w(190);
+	}
+	button{
+		background-color:@headBgColr;
+		&:first-child{
+			color:@defaultColor;
+		}
+		&:last-child{
+			color:@muteColor;
+			background-image:url(../image/search.png);
+			background-repeat:no-repeat;
+			background-size:15px 15px;
+			background-position:0px 2px;
+			.ml(15);
+			.pl(20);
+		}
+	}
+}
+.search-list{
+	.mt(80);
+}

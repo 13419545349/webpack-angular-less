@@ -1,0 +1,137 @@
+@import "head.less";
+@import "tongse.less";
+@import "foot.less";
+@import "positionlist.less";
+@import "position.less";
+@import "positioninfo.less";
+@import "company.less";
+@import "appPositionClass.less";
+@import "search.less";
+@import "appTab.less";
+@import "appSheet.less";
+@import "login.less";
+@import "regist.less";
+@import "me.less";
+@import "post.less";
+.animated{
+	animation-fill-mode:both;
+	animation-duration:1s;
+}
+@keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+.fadeIn{
+	animation-name:fadeIn;
+}
+.ta-c{ 
+	text-align:center;
+}
+.ta-l{
+	text-align:left;
+}
+.fs(@px){
+	font-size: unit(@px/37.5,rem);
+}
+.w(@px){
+	width:unit(@px/37.5,rem);
+}
+.h(@px){
+	height:unit(@px/37.5,rem);
+}
+.lh(@px){
+	line-height:unit(@px/37.5,rem)
+}
+.c-r{
+	color:red;
+}
+.fr{
+	float:right;
+}
+.fl{
+	float:left;
+}
+.clear{
+	clear:both;
+}
+.mr(@px){
+	margin-right:unit(@px/37.5,rem)
+}
+.ml(@px){
+	margin-left:unit(@px/37.5,rem)
+}
+.mt(@px){
+	margin-top:unit(@px/37.5,rem)
+}
+.mb(@px){
+	margin-bottom:unit(@px/37.5,rem)
+}
+.pr(@px){
+	padding-right:unit(@px/37.5,rem)
+}
+.pl(@px){
+	padding-left:unit(@px/37.5,rem)
+}
+.pt(@px){
+	padding-top:unit(@px/37.5,rem)
+}
+.pb(@px){
+	padding-bottom:unit(@px/37.5,rem)
+}
+.d-ib{
+	display:inline-block;
+}
+.d-b{
+	display:block;
+}
+.vt{
+	vertical-align:top;
+}
+.vb{
+	vertical-align:bottom;
+}
+.vm{
+	vertical-align:middle;
+}
+.c-w{
+	color:#fff;
+}
+.t-c{
+	text-align:center;
+}
+.p-a{
+	position:absolute;
+}
+.p-r{
+	position:relative;
+}
+.bg-w{
+	background-color:#fff;
+}
+.t(@px){
+	top:unit(@px/37.5,rem)
+}
+.r(@px){
+	right:unit(@px/37.5,rem)
+}
+.l(@px){
+	left:unit(@px/37.5,rem)
+}
+.b(@px){
+	bottom:unit(@px/37.5,rem)
+}
+body{
+	.fs(16);
+	margin:0;
+	height:100%;
+	width:100%;
+	background:@bodyBgColor;
+}
+
+button{
+	outline-width:0;
+}
